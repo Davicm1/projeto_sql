@@ -1,0 +1,29 @@
+create table curso (id int primary key(3), curso varchar2(30), horas int(3), id_professor int (3));
+insert into curso (id, curso, horas, id_professor) values (1, "lógica", 24, 1);
+insert into curso (id, curso, horas, id_professor) values (2, "Python", 36, 2);
+insert into curso (id, curso, horas, id_professor) values (3, "SQL", 40, 1);
+insert into curso (id, curso, horas, id_professor) values (4, "HTML", 16, 3);
+insert into curso (id, curso, horas, id_professor) values (5, "Mod.Dados", 20, 1);
+insert into curso (id, curso, horas, id_professor) values (6, "internet", 12, 2);
+insert into curso (id, curso, horas, id_professor) values (7, "github", 22, 3);
+insert into curso (id, curso, horas, id_professor) values (8, "segurança", 60, 2);
+-------------------------------------------------------------------------------------------------------------------------------------------
+create table Turma(id_turma int primary key, nome varchar2(30),id_professor int(3), id_curso int(3), periodo varchar2(30));
+insert into Turma(id_turma, nome, id_professor, id_curso, periodo) values (1, "2C", 1, 1, "manhã");
+insert into Turma(id_turma, nome, id_professor, id_curso, periodo) values (2, "1D", 1, 2, "tarde");
+insert into Turma(id_turma, nome, id_professor, id_curso, periodo) values (3, "2A", 2, 1, "tarde");
+insert into Turma(id_turma, nome, id_professor, id_curso, periodo) values (4, "1A", 3, 2, "noite");
+insert into Turma(id_turma, nome, id_professor, id_curso, periodo) values (5, "3B", 1, 3, "manhã");
+insert into Turma(id_turma, nome, id_professor, id_curso, periodo) values (6, "3B", 1, 5, "tarde");
+insert into Turma(id_turma, nome, id_professor, id_curso, periodo) values (7, "3A", 2, 3, "noite");
+insert into Turma(id_turma, nome, id_professor, id_curso, periodo) values (8, "1D", 3, 1, "manhã");
+insert into Turma(id_turma, nome, id_professor, id_curso, periodo) values (9, "2D", 2, 1, "manhã");
+insert into Turma(id_turma, nome, id_professor, id_curso, periodo) values (10, "1E", 1, 7, "tarde");
+-----------------------------------------------------------------------------------------------------------------------------------------------
+create table professores(id int primary key, nome varchar2(30), email varchar(30), telefone varchar2(14),cadastro date);
+insert into professores(id, nome, email, telefone, cadastro) values(1, "carlos luiz", "carlosluiz@gmail.com", 11-9090-82123,  05-28-2021);
+insert into professores(id, nome, email, telefone, cadastro) values(2, "julia", "julia2024@gmail.com", 11-9295-2321,  10-15-2022);
+insert into professores(id, nome, email, telefone, cadastro) values(3, "marcela", "prof.marcela@gmail.com", 11-9290-3423,  7-02-2018);
+insert into professores(id, nome, email, telefone, cadastro) values(4, "leonardo", "leo_prof@gmail.com", 11-9092-0022,  11-24-2020);
+insert into professores(id, nome, email, telefone, cadastro) values(5, "hugo", "hugo2@gmail.com", 11-9902-2312,  11-18-2018);
+insert into professores(id, nome, email, telefone, cadastro) values(6, "silas", "sila.s@gmail.com", 11-9293-9022, 05-15-2022);
