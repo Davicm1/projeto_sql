@@ -27,3 +27,7 @@ insert into professores(id, nome, email, telefone, cadastro) values(3, "marcela"
 insert into professores(id, nome, email, telefone, cadastro) values(4, "leonardo", "leo_prof@gmail.com", 11-9092-0022,  11-24-2020);
 insert into professores(id, nome, email, telefone, cadastro) values(5, "hugo", "hugo2@gmail.com", 11-9902-2312,  11-18-2018);
 insert into professores(id, nome, email, telefone, cadastro) values(6, "silas", "sila.s@gmail.com", 11-9293-9022, 05-15-2022);
+
+select * from Curso
+select * from professores
+select * from turma
